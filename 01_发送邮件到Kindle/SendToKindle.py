@@ -49,7 +49,8 @@ class Application(Application_ui):
     # 这个类实现具体的事件处理回调函数。界面生成代码在Application_ui中。
     def __init__(self, master=None):
         Application_ui.__init__(self, master)
-        self.m = SendEmail.Mail("***", "smtp.qq.com", "***", "***")
+        self.m = SendEmail.Mail("***", "smtp.qq.com", "***", "***")  # 此处需要自行设置，第一个kindle接收邮箱，第二个smtp的邮件
+                                                                     # 服务器，第三个邮箱，第四个smtp服务器密码·
 
     def Command1_Cmd(self, event=None):
         filenames = tkFileDialog.askopenfilenames(filetypes=[('mobi', '.mobi'), ('txt', '.txt')])
