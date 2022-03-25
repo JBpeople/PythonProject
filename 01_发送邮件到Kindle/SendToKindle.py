@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2021-12-6 9:10
+# @Time : 2021-3-6 9:10
 # @Author : Administrator
 # @Email : lcmmljs@foxmail.com
 # @File : main.py
@@ -59,7 +59,7 @@ class Application(Application_ui):
             self.m.add_attachment(filename)
 
     def Command2_Cmd(self, event=None):
-        if self.m.send():
+        if m.send():
             tkinter.messagebox.showinfo("提示", "邮件发送成功！")
         else:
             tkinter.messagebox.showinfo("提示", "邮件发送失败！")
