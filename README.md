@@ -8,3 +8,7 @@
 ![image](https://user-images.githubusercontent.com/92583429/159947605-5eb72b92-da93-426f-85cb-6b0ed4ec6fc3.png)
 
 将第一个*** 改成自己的kindle邮箱，后面是自己的邮箱服务器；
+
+## 02_合并PDF
+### 功能
+不知为啥Foxit用不了了，自己用python写了个PDF合并工具；
