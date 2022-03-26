@@ -7,6 +7,7 @@
 
 import glob
 import PySimpleGUI as sg
+from datetime import datetime
 from PyPDF2 import PdfFileReader, PdfFileWriter
 
 # 创建GUI布局
@@ -72,8 +73,9 @@ while True:
                     for i in range(0, numPages):
                         pageObj = pdfReader.getPage(i)
                         pdfFileWriter.addPage(pageObj)
+                time = str(datetime.now()).split(".")[-1]
                 folder = sg.popup_get_folder('请选择文件保存位置：', title='提示', keep_on_top=True)
-                pdfFileWriter.write(open(folder + '//合并文件.pdf', 'wb'))
+                pdfFileWriter.write(open(folder + f'//{time}.pdf', 'wb'))
                 sg.popup_ok('文件已合并完成~', keep_on_top=True)
         except NameError:
             pass
